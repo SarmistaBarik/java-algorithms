@@ -6,6 +6,16 @@ public class Factorial {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         System.out.println( factorialResult(n));
+
+        System.out.println( factorialResultRecursion(n));
+    }
+
+    private static int factorialResultRecursion(int n) {
+
+        if(n == 0 || n == 1){
+            return 1;
+        }
+        return n *  factorialResultRecursion(n-1);
     }
 
     private static int factorialResult(int n) {

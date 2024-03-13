@@ -7,6 +7,16 @@ public class CountDigit {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         System.out.println(countTheDigit(n));
+        System.out.println(countTheDigitRecursion(n));
+    }
+
+    private static int countTheDigitRecursion(int n) {
+
+        if(n == 0){
+            return 0;
+        }
+        return countTheDigitRecursion(n/10) +1;
+
     }
 
     private static int countTheDigit(int n) {

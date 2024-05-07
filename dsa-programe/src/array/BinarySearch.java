@@ -7,7 +7,6 @@ public class BinarySearch {
     public static void main(String[] args) {
 
         int[] ar = {3,5,6,8,30,40,55,78};
-      //  Arrays.sort(ar);
         int key = 40;
         System.out.println(binarySearch(ar,key));
     }

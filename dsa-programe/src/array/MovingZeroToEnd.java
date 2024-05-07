@@ -1,3 +1,5 @@
+package array;
+
 import java.util.Arrays;
 
 public class MovingZeroToEnd {
@@ -27,7 +29,7 @@ public class MovingZeroToEnd {
             }
         }
         System.out.println(Arrays.toString(arr));
-//moving zero to front
+    //moving zero to front
         int nz1 = 0;
         int z1 = 0;
         while(z1<arr.length) {
